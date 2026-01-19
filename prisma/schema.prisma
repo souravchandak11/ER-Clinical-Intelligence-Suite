@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:postgres@localhost:5432/clinical_suite"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      String   @default("PATIENT") // PATIENT, DOCTOR, ADMIN
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Patient Data
+  vitals       Vital[]
+  medications  Medication[]
+  appointments Appointment[] @relation("PatientAppointments")
+  
+  // Doctor Data
+  doctorAppointments Appointment[] @relation("DoctorAppointments")
+}
+
+model Vital {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  type      String   // "HEART_RATE", "GLUCOSE", "CHOLESTEROL", "BLOOD_PRESSURE"
+  value     Float
+  unit      String
+  status    String?  // "NORMAL", "WARNING", "CRITICAL"
+  timestamp DateTime @default(now())
+}
+
+model Medication {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  name      String
+  dosage    String
+  schedule  String   // "Daily", "Weekly", "AM/PM"
+  adherence Int      // 0-100 percentage
+  active    Boolean  @default(true)
+}
+
+model Appointment {
+  id        String   @id @default(cuid())
+  patientId String
+  patient   User     @relation("PatientAppointments", fields: [patientId], references: [id])
+  doctorId  String
+  doctor    User     @relation("DoctorAppointments", fields: [doctorId], references: [id])
+  date      DateTime
+  type      String   // "Checkup", "Therapy", "Surgery"
+  status    String   // "UPCOMING", "COMPLETED", "CANCELLED"
+}

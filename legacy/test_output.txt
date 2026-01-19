@@ -1,0 +1,100 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.0.2, pluggy-1.6.0
+rootdir: C:\Users\soura\ER Clinical Intelligence Suite
+plugins: anyio-4.12.1, locust-2.43.1
+collected 4 items
+
+tests\integration\test_triage_flow.py FF.                                [ 75%]
+tests\performance\test_latency.py .                                      [100%]
+
+================================== FAILURES ===================================
+___________________________ test_triage_flow_normal ___________________________
+
+    def test_triage_flow_normal():
+        vitals = {
+            "hr": 70,
+            "bp_sys": 115,
+            "bp_dia": 75,
+            "spo2": 99,
+            "temp": 98.4,
+            "rr": 14
+        }
+    
+        # Mock the internal triage_service.process_triage call
+        mock_result = MedGemmaMock.get_triage_response("Stubbed toe", vitals)
+    
+        with patch("backend.app.main.triage_service.process_triage", return_value=mock_result), \
+             patch("backend.app.main.log_audit_event"):
+            response = client.post(
+                "/triage/multimodal",
+                data={
+                    "chief_complaint": "Stubbed toe, slight pain.",
+                    "vitals_json": json.dumps(vitals)
+                }
+            )
+            assert response.status_code == 200
+            data = response.json()
+            assert data["esi_level"] == 3
+>           assert "Stable vitals" in data["reasoning"]
+E           AssertionError: assert 'Stable vitals' in 'Automated triage assessment based on vitals and notes.'
+
+tests\integration\test_triage_flow.py:35: AssertionError
+___________________________ test_triage_flow_urgent ___________________________
+
+    def test_triage_flow_urgent():
+        vitals = {
+            "hr": 130,
+            "bp_sys": 140,
+            "bp_dia": 90,
+            "spo2": 88,
+            "temp": 101.5,
+            "rr": 28
+        }
+    
+        mock_result = MedGemmaMock.get_triage_response("Shortness of breath", vitals)
+    
+        with patch("backend.app.main.triage_service.process_triage", return_value=mock_result), \
+             patch("backend.app.main.log_audit_event"):
+            response = client.post(
+                "/triage/multimodal",
+                data={
+                    "chief_complaint": "Severe shortness of breath and chest tightness.",
+                    "vitals_json": json.dumps(vitals)
+                }
+            )
+            assert response.status_code == 200
+            data = response.json()
+>           assert data["esi_level"] == 2
+E           assert 3 == 2
+
+tests\integration\test_triage_flow.py:60: AssertionError
+============================== warnings summary ===============================
+backend\app\main.py:38
+  C:\Users\soura\ER Clinical Intelligence Suite\backend\app\main.py:38: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\applications.py:4576
+  C:\Users\soura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\applications.py:4576: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)
+
+backend\app\services\ollama_service.py:18
+  C:\Users\soura\ER Clinical Intelligence Suite\backend\app\services\ollama_service.py:18: RuntimeWarning: coroutine 'OllamaService._batch_worker' was never awaited
+    pass
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_triage_flow.py::test_triage_flow_normal - Asser...
+FAILED tests/integration/test_triage_flow.py::test_triage_flow_urgent - asser...
+================== 2 failed, 2 passed, 3 warnings in 11.28s ===================

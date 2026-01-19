@@ -1,0 +1,2794 @@
+﻿
+> health-dashboard@0.1.0 build
+> prisma generate || echo 'Skipping Prisma' && next build
+
+node.exe : Prisma schema 
+loaded from 
+prisma\schema.prisma.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (P  
+  risma schema l...\sch   
+ ema.prisma.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+Error: Prisma schema 
+validation - (get-config 
+wasm)
+Error code: P1012
+error: The datasource 
+property `url` is no 
+longer supported in 
+schema files. Move 
+connection URLs for 
+Migrate to 
+`prisma.config.ts` and 
+pass either `adapter` for 
+a direct database 
+connection or 
+`accelerateUrl` for 
+Accelerate to the 
+`PrismaClient` 
+constructor. See https://p
+ris.ly/d/config-datasource
+ and https://pris.ly/d/pri
+sma7-client-config
+  -->  
+prisma\schema.prisma:7
+   | 
+ 6 |   provider = 
+"postgresql"
+ 7 |   url      = 
+env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1
+[Context: getConfig]
+
+Prisma CLI Version : 7.2.0
+'Skipping Prisma' 
+Γû▓ Next.js 16.1.3 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build 
+failed with 20 errors:
+./node_modules/@trpc/react
+-query/dist/index.mjs:2:1
+Module not found: Can't 
+resolve 
+'./shared-JtnEvJvB.mjs'
+[0m [90m 1 |[39m 
+[36mimport[39m { 
+getMutationKey[33m,[39m 
+getQueryKey } 
+[36mfrom[39m [32m"./get
+QueryKey-BY58RNzP.mjs"[39
+m[33m;[39m
+[31m[1m>[22m[39m[90m 
+2 |[39m [36mimport[39m 
+{ createQueryUtilsProxy[3
+3m,[39m createReactDecora
+tion[33m,[39m createReac
+tQueryUtils[33m,[39m cre
+ateRootHooks[33m,[39m 
+createUtilityFunctions } 
+[36mfrom[39m [32m"./sha
+red-JtnEvJvB.mjs"[39m[33
+m;[39m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m
+ [90m 3 |[39m 
+[36mimport[39m { 
+createFlatProxy } 
+[36mfrom[39m [32m"@trpc
+/server/unstable-core-do-n
+ot-import"[39m[33m;[39m
+ [90m 4 |[39m 
+[36mimport[39m 
+[33m*[39m [36mas[39m 
+[33mReact[39m 
+[36mfrom[39m [32m"react
+"[39m[33m;[39m
+ [90m 5 |[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/@trpc/r
+eact-query/dist/index.mjs 
+[Client Component Browser]
+    ./src/trpc/react.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/NoteWidget.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/NoteWidget.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/@trpc/r
+eact-query/dist/index.mjs 
+[Client Component SSR]
+    ./src/trpc/react.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/NoteWidget.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/NoteWidget.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/brushSlice.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m
+ [90m 3 |[39m 
+[90m/**[39m
+ [90m 4 |[39m [90m * 
+From all Brush 
+properties, only height 
+has a default value and 
+will always be 
+defined.[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/brushSlice.js 
+[Client Component Browser]
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component Browser]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/brushSlice.js 
+[Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/cartesianAxisSlice
+.js:6:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m [90m 4 |[39m 
+[36mfunction[39m 
+_toPropertyKey(t) { 
+[36mvar[39m i 
+[33m=[39m 
+_toPrimitive(t[33m,[39m 
+[32m"string"[39m)[33m;
+[39m [36mreturn[39m 
+[32m"symbol"[39m 
+[33m==[39m 
+[36mtypeof[39m i 
+[33m?[39m i [33m:[39m 
+i [33m+[39m 
+[32m""[39m[33m;[39m }
+ [90m 5 |[39m 
+[36mfunction[39m 
+_toPrimitive(t[33m,[39m 
+r) { [36mif[39m 
+([32m"object"[39m 
+[33m!=[39m 
+[36mtypeof[39m t 
+[33m||[39m 
+[33m![39mt) 
+[36mreturn[39m 
+t[33m;[39m 
+[36mvar[39m e 
+[33m=[39m t[[33mSymbol
+[39m[33m.[39mtoPrimitive
+][33m;[39m [36mif[39m 
+([36mvoid[39m 
+[35m0[39m [33m!==[39m 
+e) { [36mvar[39m i 
+[33m=[39m e[33m.[39mca
+ll(t[33m,[39m r 
+[33m||[39m [32m"default
+"[39m)[33m;[39m 
+[36mif[39m 
+([32m"object"[39m 
+[33m!=[39m 
+[36mtypeof[39m i) 
+[36mreturn[39m 
+i[33m;[39m 
+[36mthrow[39m 
+[36mnew[39m [33mTypeErr
+or[39m([32m"@@toPrimitiv
+e must return a primitive 
+value."[39m)[33m;[39m 
+} [36mreturn[39m 
+([32m"string"[39m 
+[33m===[39m r 
+[33m?[39m 
+[33mString[39m 
+[33m:[39m [33mNumber[3
+9m)(t)[33m;[39m }
+[31m[1m>[22m[39m[90m 
+6 |[39m [36mimport[39m 
+{ createSlice[33m,[39m 
+prepareAutoBatched } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m
+ [90m 7 |[39m 
+[36mimport[39m { 
+castDraft } 
+[36mfrom[39m [32m'immer
+'[39m[33m;[39m
+ [90m 8 |[39m
+ [90m 9 |[39m 
+[90m/**[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/cartesianAxisS
+lice.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/cartesian/YAxis.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/cartesianAxisS
+lice.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/cartesian/YAxis.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/chartDataSlice.js:
+1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m
+ [90m 3 |[39m 
+[90m/**[39m
+ [90m 4 |[39m [90m * 
+This is the data that's 
+coming through main chart 
+`data` prop[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/chartDataSlice
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/context/chartDataCon
+text.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/chartDataSlice
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/context/chartDataCon
+text.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/errorBarSlice.js:1
+:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m
+ [90m 3 |[39m 
+[90m/**[39m
+ [90m 4 |[39m [90m * 
+ErrorBars have lot more 
+settings but all the 
+others are scoped to the 
+component itself.[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/errorBarSlice.
+js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/context/ErrorBarCont
+ext.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/errorBarSlice.
+js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/context/ErrorBarCont
+ext.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/externalEventsMidd
+leware.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createAction[33m,[39m 
+createListenerMiddleware 
+} [36mfrom[39m [32m'@re
+duxjs/toolkit'[39m[33m;
+[39m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m
+ [90m 2 |[39m 
+[36mimport[39m { selectA
+ctiveLabel[33m,[39m sele
+ctActiveTooltipCoordinate
+[33m,[39m selectActiveToo
+ltipDataKey[33m,[39m sel
+ectActiveTooltipIndex[33m
+,[39m 
+selectIsTooltipActive } 
+[36mfrom[39m [32m'./sel
+ectors/tooltipSelectors'[
+39m[33m;[39m
+ [90m 3 |[39m 
+[36mexport[39m 
+[36mvar[39m 
+externalEventAction 
+[33m=[39m createAction(
+[32m'externalEvent'[39m)
+[33m;[39m
+ [90m 4 |[39m 
+[36mexport[39m 
+[36mvar[39m 
+externalEventsMiddleware 
+[33m=[39m createListener
+Middleware()[33m;[39m[0
+m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/externalEvents
+Middleware.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/RechartsWrappe
+r.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CategoricalCha
+rt.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/externalEvents
+Middleware.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/RechartsWrappe
+r.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CategoricalCha
+rt.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/graphicalItemsSlic
+e.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice[33m,[39m 
+current[33m,[39m 
+prepareAutoBatched } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m
+ [90m 2 |[39m 
+[36mimport[39m { 
+castDraft } 
+[36mfrom[39m [32m'immer
+'[39m[33m;[39m
+ [90m 3 |[39m
+ [90m 4 |[39m 
+[90m/**[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/graphicalItems
+Slice.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/state/SetGraphicalIt
+em.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/graphicalItems
+Slice.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/state/SetGraphicalIt
+em.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/keyboardEventsMidd
+leware.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createAction[33m,[39m 
+createListenerMiddleware 
+} [36mfrom[39m [32m'@re
+duxjs/toolkit'[39m[33m;
+[39m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m
+ [90m 2 |[39m 
+[36mimport[39m { 
+setKeyboardInteraction } 
+[36mfrom[39m [32m'./too
+ltipSlice'[39m[33m;[39m
+ [90m 3 |[39m 
+[36mimport[39m { selectT
+ooltipAxisDomain[33m,[39
+m selectTooltipAxisTicks[
+33m,[39m selectTooltipDis
+playedData } 
+[36mfrom[39m [32m'./sel
+ectors/tooltipSelectors'[
+39m[33m;[39m
+ [90m 4 |[39m 
+[36mimport[39m { selectC
+oordinateForDefaultIndex 
+} [36mfrom[39m [32m'./s
+electors/selectors'[39m[
+33m;[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/keyboardEvents
+Middleware.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/RechartsWrappe
+r.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CategoricalCha
+rt.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/keyboardEvents
+Middleware.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/RechartsWrappe
+r.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CategoricalCha
+rt.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/layoutSlice.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m 
+[36mvar[39m 
+initialState [33m=[39m {
+ [90m 3 |[39m   
+layoutType[33m:[39m [32
+m'horizontal'[39m[33m,[
+39m
+ [90m 4 |[39m   
+width[33m:[39m 
+[35m0[39m[33m,[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/layoutSlice.js
+ [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/context/chartLayoutC
+ontext.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/layoutSlice.js
+ [Client Component SSR]
+    ./node_modules/rechart
+s/es6/context/chartLayoutC
+ontext.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/legendSlice.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice[33m,[39m 
+current[33m,[39m 
+prepareAutoBatched } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m
+ [90m 2 |[39m 
+[36mimport[39m { 
+castDraft } 
+[36mfrom[39m [32m'immer
+'[39m[33m;[39m
+ [90m 3 |[39m
+ [90m 4 |[39m 
+[90m/**[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/legendSlice.js
+ [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/state/SetLegendPaylo
+ad.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/legendSlice.js
+ [Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/SetLegendPaylo
+ad.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/mouseEventsMiddlew
+are.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createAction[33m,[39m 
+createListenerMiddleware 
+} [36mfrom[39m [32m'@re
+duxjs/toolkit'[39m[33m;
+[39m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m
+ [90m 2 |[39m 
+[36mimport[39m { mouseLe
+aveChart[33m,[39m setMou
+seClickAxisIndex[33m,[39
+m setMouseOverAxisIndex } 
+[36mfrom[39m [32m'./too
+ltipSlice'[39m[33m;[39m
+ [90m 3 |[39m 
+[36mimport[39m { selectA
+ctivePropsFromChartPointer
+ } [36mfrom[39m [32m'./
+selectors/selectActiveProp
+sFromChartPointer'[39m[3
+3m;[39m
+ [90m 4 |[39m 
+[36mimport[39m { 
+selectTooltipEventType } 
+[36mfrom[39m [32m'./sel
+ectors/selectTooltipEventT
+ype'[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/mouseEventsMid
+dleware.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/RechartsWrappe
+r.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CategoricalCha
+rt.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/mouseEventsMid
+dleware.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/RechartsWrappe
+r.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CategoricalCha
+rt.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/optionsSlice.js:1:
+1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m 
+[36mimport[39m { isNan 
+} [36mfrom[39m [32m'../
+util/DataUtils'[39m[33m;
+[39m
+ [90m 3 |[39m
+ [90m 4 |[39m 
+[90m/**[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/optionsSlice.j
+s [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/optionsSlice.j
+s [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/polarAxisSlice.js:
+1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m 
+[36mimport[39m { 
+castDraft } 
+[36mfrom[39m [32m'immer
+'[39m[33m;[39m
+ [90m 3 |[39m 
+[36mvar[39m 
+initialState [33m=[39m {
+ [90m 4 |[39m   
+radiusAxis[33m:[39m 
+{}[33m,[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/polarAxisSlice
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component Browser]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/polarAxisSlice
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/polarOptionsSlice.
+js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m 
+[36mvar[39m 
+polarOptionsSlice 
+[33m=[39m createSlice({
+ [90m 3 |[39m   
+name[33m:[39m [32m'pola
+rOptions'[39m[33m,[39m
+ [90m 4 |[39m   
+initialState[33m:[39m [
+36mnull[39m[33m,[39m[0
+m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/polarOptionsSl
+ice.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component Browser]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/polarOptionsSl
+ice.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/referenceElementsS
+lice.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice[33m,[39m 
+current } [36mfrom[39m 
+[32m'@reduxjs/toolkit'[39
+m[33m;[39m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m
+ [90m 2 |[39m 
+[36mimport[39m { 
+castDraft } 
+[36mfrom[39m [32m'immer
+'[39m[33m;[39m
+ [90m 3 |[39m 
+[36mvar[39m 
+initialState [33m=[39m {
+ [90m 4 |[39m   
+dots[33m:[39m 
+[][33m,[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/referenceEleme
+ntsSlice.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component Browser]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/referenceEleme
+ntsSlice.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/rootPropsSlice.js:
+1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m
+ [90m 3 |[39m 
+[90m/**[39m
+ [90m 4 |[39m [90m * 
+These are chart options 
+that users can choose - 
+which means they can 
+also[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/rootPropsSlice
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/state/ReportChartPro
+ps.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/rootPropsSlice
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/ReportChartPro
+ps.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/store.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { autoBat
+chEnhancer[33m,[39m comb
+ineReducers[33m,[39m 
+configureStore } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 2 |[39m 
+[36mimport[39m { 
+optionsReducer } 
+[36mfrom[39m [32m'./opt
+ionsSlice'[39m[33m;[39m
+ [90m 3 |[39m 
+[36mimport[39m { 
+tooltipReducer } 
+[36mfrom[39m [32m'./too
+ltipSlice'[39m[33m;[39m
+ [90m 4 |[39m 
+[36mimport[39m { 
+chartDataReducer } 
+[36mfrom[39m [32m'./cha
+rtDataSlice'[39m[33m;[3
+9m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component Browser]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/store.js 
+[Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/RechartsStoreP
+rovider.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/tooltipSlice.js:1:
+1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createSlice[33m,[39m 
+current[33m,[39m 
+prepareAutoBatched } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m
+ [90m 2 |[39m 
+[36mimport[39m { 
+castDraft } 
+[36mfrom[39m [32m'immer
+'[39m[33m;[39m
+ [90m 3 |[39m
+ [90m 4 |[39m 
+[90m/**[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/tooltipSlice.j
+s [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/state/SetTooltipEntr
+ySettings.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/tooltipSlice.j
+s [Client Component SSR]
+    ./node_modules/rechart
+s/es6/state/SetTooltipEntr
+ySettings.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/touchEventsMiddlew
+are.js:1:1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m[31m[1m>[22m[39m[
+90m 1 |[39m 
+[36mimport[39m { 
+createAction[33m,[39m 
+createListenerMiddleware 
+} [36mfrom[39m [32m'@re
+duxjs/toolkit'[39m[33m;
+[39m
+ [90m   |[39m [31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31
+m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m
+[1m^[22m[39m
+ [90m 2 |[39m 
+[36mimport[39m { setActi
+veMouseOverItemIndex[33m,
+[39m 
+setMouseOverAxisIndex } 
+[36mfrom[39m [32m'./too
+ltipSlice'[39m[33m;[39m
+ [90m 3 |[39m 
+[36mimport[39m { selectA
+ctivePropsFromChartPointer
+ } [36mfrom[39m [32m'./
+selectors/selectActiveProp
+sFromChartPointer'[39m[3
+3m;[39m
+ [90m 4 |[39m 
+[36mimport[39m { 
+getChartPointer } 
+[36mfrom[39m [32m'../ut
+il/getChartPointer'[39m[
+33m;[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/touchEventsMid
+dleware.js [Client 
+Component Browser]
+    ./node_modules/rechart
+s/es6/chart/RechartsWrappe
+r.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CategoricalCha
+rt.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/touchEventsMid
+dleware.js [Client 
+Component SSR]
+    ./node_modules/rechart
+s/es6/chart/RechartsWrappe
+r.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CategoricalCha
+rt.js [Client Component 
+SSR]
+    ./node_modules/rechart
+s/es6/chart/CartesianChart
+.js [Client Component SSR]
+    ./node_modules/rechart
+s/es6/chart/LineChart.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./node_modules/recharts/es
+6/state/zIndexSlice.js:10:
+1
+Module not found: Can't 
+resolve '@reduxjs/toolkit'
+[0m [90m  8 |[39m 
+[90m * The state is a 
+map from z-index numbers 
+to element 
+references.[39m
+ [90m  9 |[39m [90m 
+*/[39m
+[31m[1m>[22m[39m[90m 
+10 |[39m 
+[36mimport[39m { 
+createSlice[33m,[39m 
+prepareAutoBatched } 
+[36mfrom[39m [32m'@redu
+xjs/toolkit'[39m[33m;[3
+9m
+ [90m    |[39m [31m[1m
+^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m
+[39m
+ [90m 11 |[39m 
+[36mimport[39m { 
+castDraft } 
+[36mfrom[39m [32m'immer
+'[39m[33m;[39m
+ [90m 12 |[39m 
+[36mimport[39m { 
+[33mDefaultZIndexes[39m 
+} [36mfrom[39m [32m'../
+zIndex/DefaultZIndexes'[3
+9m[33m;[39m
+ [90m 13 |[39m 
+[36mvar[39m seed 
+[33m=[39m 
+{}[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./node_modules/rechart
+s/es6/state/zIndexSlice.js
+ [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/zIndex/ZIndexLayer.j
+s [Client Component 
+Browser]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component Browser]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./node_modules/rechart
+s/es6/state/zIndexSlice.js
+ [Client Component SSR]
+    ./node_modules/rechart
+s/es6/zIndex/ZIndexLayer.j
+s [Client Component SSR]
+    ./node_modules/rechart
+s/es6/cartesian/Line.js 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Client Component SSR]
+    ./src/components/dashb
+oard/VitalsCard.tsx 
+[Server Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+    at ./node_modules/ (tr
+pc/react-query/dist/index.
+mjs:2:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    ... collapsed 19 
+duplicate lines matching 
+above 1 lines 19 times...

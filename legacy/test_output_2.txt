@@ -1,0 +1,36 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.0.2, pluggy-1.6.0
+rootdir: C:\Users\soura\ER Clinical Intelligence Suite
+plugins: anyio-4.12.1, locust-2.43.1
+collected 4 items
+
+tests\integration\test_triage_flow.py ...                                [ 75%]
+tests\performance\test_latency.py .                                      [100%]
+
+============================== warnings summary ===============================
+backend\app\main.py:38
+  C:\Users\soura\ER Clinical Intelligence Suite\backend\app\main.py:38: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\applications.py:4576
+  C:\Users\soura\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\applications.py:4576: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)
+
+backend\app\services\ollama_service.py:18
+  C:\Users\soura\ER Clinical Intelligence Suite\backend\app\services\ollama_service.py:18: RuntimeWarning: coroutine 'OllamaService._batch_worker' was never awaited
+    pass
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 4 passed, 3 warnings in 11.81s ========================

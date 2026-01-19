@@ -1,0 +1,44 @@
+# MedGemma Fine-tuning Configuration
+
+model_settings:
+  model_id: "google/medgemma-7b"  # Base model path
+  output_dir: "./models/medgemma-qlora-clinical"
+  
+training_params:
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  num_train_epochs: 3
+  max_steps: -1  # Set to > 0 to override epochs
+  warmup_ratio: 0.03
+  weight_decay: 0.01
+  logging_steps: 10
+  eval_steps: 100
+  save_steps: 100
+  evaluation_strategy: "steps"
+  save_total_limit: 3
+
+qlora_config:
+  quantization_4bit: true
+  bnb_4bit_compute_dtype: "float16"
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+
+lora_config:
+  r: 16
+  lora_alpha: 32
+  target_modules: 
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  lora_dropout: 0.05
+  bias: "none"
+  task_type: "CAUSAL_LM"
+
+early_stopping_params:
+  early_stopping_patience: 3
+  early_stopping_threshold: 0.0

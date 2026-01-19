@@ -1,0 +1,13 @@
+﻿--- STARTING API TEST ---
+
+HIGH RISK RESPONSE:
+{
+  "detail": "(psycopg2.OperationalError) could not translate host name \"db\" to address: Name or service not known\n\n(Background on this error at: https://sqlalche.me/e/20/e3q8)"
+}
+
+LOW RISK RESPONSE:
+{
+  "detail": "(psycopg2.OperationalError) could not translate host name \"db\" to address: Name or service not known\n\n(Background on this error at: https://sqlalche.me/e/20/e3q8)"
+}
+
+--- TEST COMPLETE ---

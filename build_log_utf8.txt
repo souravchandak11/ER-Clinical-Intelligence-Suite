@@ -1,0 +1,126 @@
+﻿
+> health-dashboard@0.1.0 build
+> next build
+
+node.exe : ΓÜá 
+Warning: Next.js 
+inferred your 
+workspace root, but 
+it may not be 
+correct.
+At line:1 char:1
++ & "C:\Program File
+s\nodejs/node.exe" 
+"C:\Program Files\no
+dejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (ΓÜá    
+ Warning: Ne...n    
+ot be correct.:    
+String) [], Rem    
+oteException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+ We detected 
+multiple lockfiles 
+and selected the 
+directory of C:\User
+s\soura\package-lock
+.json as the root 
+directory.
+ To silence this 
+warning, set 
+`turbopack.root` in 
+your Next.js 
+config, or consider 
+removing one of the 
+lockfiles if it's 
+not needed.
+   See https://nextj
+s.org/docs/app/api-r
+eference/config/next
+-config-js/turbopack
+#root-directory for 
+more information.
+ Detected 
+additional 
+lockfiles: 
+   * 
+C:\Users\soura\ER 
+Clinical 
+Intelligence Suite\p
+ackage-lock.json
+
+Γû▓ Next.js 16.1.3 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 6.1s
+  Running TypeScript ...
+Failed to compile.
+
+./src/app/page.tsx:9
+8:70
+Type error: 
+Parameter 'a' 
+implicitly has an 
+'any' type.
+
+[0m [90m  96 
+|[39m              
+ [33m<[39m[33m/[
+39m[33mdiv[39m[33
+m>[39m
+ [90m  97 |[39m   
+            [33m<[
+39m[33mdiv[39m cla
+ssName[33m=[39m[3
+2m"col-span-3"[39m
+[33m>[39m
+[31m[1m>[22m[39m
+[90m  98 |[39m    
+             [33m<
+[39m[33mScheduleLis
+t[39m appointments
+[33m=[39m{patient[
+33m.[39mappointment
+s[33m.[39mmap(a 
+[33m=>[39m ({
+ [90m     |[39m   
+                    
+                    
+                    
+       
+[31m[1m^[22m[39m
+ [90m  99 |[39m   
+                
+id[33m:[39m a[33m
+.[39mid[33m,[39m
+ [90m 100 |[39m   
+                doct
+orName[33m:[39m a
+[33m.[39mdoctor[33
+m.[39mname 
+[33m||[39m [32m"U
+nknown"[39m[33m,[
+39m
+ [90m 101 |[39m   
+                spec
+ialty[33m:[39m [3
+2m"Specialist"[39m
+[33m,[39m [90m// 
+In a real app, 
+Doctor would have 
+Specialty 
+field[39m[0m
+Next.js build 
+worker exited with 
+code: 1 and signal: 
+null

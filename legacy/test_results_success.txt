@@ -1,0 +1,45 @@
+﻿--- STARTING API TEST ---
+
+HIGH RISK RESPONSE:
+{
+  "esi_level": 1,
+  "reasoning": "Automated triage assessment based on vitals and notes.",
+  "confidence": 0.95,
+  "red_flags": [
+    "Sepsis",
+    "Myocardial Infarction"
+  ],
+  "follow_up_questions": [
+    "How long has the patient been experiencing these symptoms?",
+    "Any history of similar episodes?",
+    "Any known allergies to medications?"
+  ],
+  "recommended_next_steps": [
+    "Stat EKG",
+    "Troponin levels",
+    "Chest X-ray"
+  ],
+  "patient_explanation": "Based on your symptoms and vital signs, our system suggests an urgency level of 1. You should be seen by a clinician immediately."
+}
+
+LOW RISK RESPONSE:
+{
+  "esi_level": 3,
+  "reasoning": "Automated triage assessment based on vitals and notes.",
+  "confidence": 0.85,
+  "red_flags": [
+    "Dehydration"
+  ],
+  "follow_up_questions": [
+    "How long has the patient been experiencing these symptoms?",
+    "Any history of similar episodes?",
+    "Any known allergies to medications?"
+  ],
+  "recommended_next_steps": [
+    "Observation",
+    "Oral rehydration"
+  ],
+  "patient_explanation": "Based on your symptoms and vital signs, our system suggests an urgency level of 3. A clinician will be with you shortly. Please let us know if your symptoms worsen."
+}
+
+--- TEST COMPLETE ---

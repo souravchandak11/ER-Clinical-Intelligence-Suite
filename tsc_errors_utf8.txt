@@ -1,0 +1,9 @@
+﻿src/app/page.tsx(98,70): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/server/api/routers/dashboard.ts(29,26): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/server/api/routers/dashboard.ts(30,23): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/server/api/routers/dashboard.ts(33,26): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/server/api/routers/dashboard.ts(34,23): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/server/api/routers/dashboard.ts(37,26): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/server/api/routers/dashboard.ts(38,23): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/server/db.ts(1,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/trpc/react.tsx(5,33): error TS2307: Cannot find module '@trpc/react-query' or its corresponding type declarations.

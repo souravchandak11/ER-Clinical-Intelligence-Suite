@@ -1,0 +1,43 @@
+﻿
+> health-dashboard@0.1.0 start
+> next start
+
+Γû▓ Next.js 16.1.3
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.15:3000
+
+Γ£ô Starting...
+node.exe : Error: 
+Could not find a 
+production build in 
+the '.next' 
+directory. Try 
+building your app 
+with 'next build' 
+before starting the 
+production server. h
+ttps://nextjs.org/do
+cs/messages/producti
+on-start-no-build-id
+At line:1 char:1
++ & "C:\Program File
+s\nodejs/node.exe" 
+"C:\Program Files\no
+dejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (Erro   
+ r: Could no...a    
+rt-no-build-id:    
+String) [], Rem    
+oteException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+    at 
+ignore-listed frames
