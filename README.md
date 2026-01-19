@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ER Clinical Intelligence Suite 🏥⚡
 
-## Getting Started
+### *Next-Generation AI Dashboard for Emergency Medicine*
 
-First, run the development server:
+![Dashboard Preview](https://github.com/souravchandak11/ER-Clinical-Intelligence-Suite/raw/main/public/preview.png) *(Placeholder for your image)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛑 The Core Problem
+Emergency Departments (EDs) worldwide are facing a triple crisis:
+1.  **Triage Delays**: Manual triage takes too long, leading to patient "boarding" and delayed care for critical cases.
+2.  **Documentation Burden**: Physicians spend **2 hours on paperwork for every 1 hour of care**, leading to severe burnout.
+3.  **Multimodal Gaps**: Vital signs, physician notes, and imaging (X-rays) are often siloed, preventing a holistic view of patient urgency.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✅ What it Solves
+The ER Clinical Intelligence Suite acts as an **AI-powered co-pilot for clinicians**, accelerating the journey from the waiting room to the treatment zone.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Unified Triage**: Combines text-based complaints, live vitals, and diagnostic images into a single urgency score (ESI Level).
+- **Instant Documentation**: Converts unstructured doctor-patient conversations into structured, audit-ready SOAP notes in seconds.
+- **Visual Intelligence**: Provides interactive 3D anatomical models to visualize patient condition and health metrics at a glance.
 
-## Learn More
+## 🛠️ How it Solves (The Tech)
+### 1. Multimodal AI Integration
+Using a fine-tuned **MedGemma** model, the suite performs high-stakes clinical tasks:
+- **Triage Analysis**: A multimodal pipeline that processes text (complaints), data (vitals), and images (LoRA-weighted X-ray reasoning).
+- **SOAP Engine**: Specialized LLM prompts generate Subjective, Objective, Assessment, and Plan sections with automatic **ICD-10 & CPT coding**.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Clinical Privacy & Security
+- **PII Scrubbing**: Built-in de-identification engine that removes Personal Health Information (PHI) before AI processing, ensuring HIPAA compliance.
+- **Audit Logging**: Every AI-generated clinical decision is logged for medical-legal verification.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Integrated Experience
+- **Frontend**: A high-performance **Next.js** dashboard using **tRPC** for type-safe server communication and **Glassmorphism** UI for a premium, low-friction clinician experience.
+- **Backend**: A robust **FastAPI** service with Redis caching and rate-limiting to handle the high density of ER data.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Quick Start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
+- Node.js 18+
+- Python 3.9+ 
+- Ollama (with MedGemma model)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/souravchandak11/ER-Clinical-Intelligence-Suite.git
+    cd ER-Clinical-Intelligence-Suite
+    ```
+
+2.  **Setup Backend**
+    ```bash
+    cd backend
+    pip install -r requirements.txt
+    python -m uvicorn app.main:app --reload
+    ```
+
+3.  **Setup Frontend**
+    ```bash
+    npm install
+    npm run dev
+    ```
+
+4.  **Access the Dashboard**
+    Open `http://localhost:3000` to view the personalized clinician workspace.
+
+---
+
+## 📈 Technical Roadmap
+- [x] Multimodal Triage Support
+- [x] SOAP Note Generation
+- [x] Interactive 3D Anatomy Visualizer
+- [ ] Real-time HL7/FHIR Integration
+- [ ] Multi-patient Monitoring Queue
+- [ ] EHR-integrated Export Plugin
