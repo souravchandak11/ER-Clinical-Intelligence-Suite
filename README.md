@@ -2,7 +2,8 @@
 
 ### *Next-Generation AI Dashboard for Emergency Medicine*
 
-![Dashboard Preview](https://github.com/souravchandak11/ER-Clinical-Intelligence-Suite/raw/main/public/preview.png) *(Placeholder for your image)*
+<img width="1847" height="884" alt="Screenshot 2026-01-20 013902" src="https://github.com/user-attachments/assets/cbdbc95d-d32b-4b23-8079-7f8ac75f8260" />
+
 
 ---
 
