@@ -65,19 +65,19 @@ Using a fine-tuned **MedGemma** model, the suite performs high-stakes clinical t
 4.  **Access the Dashboard**
     Open `http://localhost:3000` to view the personalized clinician workspace.
 
-## 🌐 Deployment
+## 🌐 Deployment (Cloudflare Tunnel)
 
-### Railway (Recommended for Backend)
-1. **Connect GitHub**: Connect your repository to Railway.
-2. **Auto-Detection**: Railway will use `railway.json` to automatically set the root directory to `/backend` and use the correct start command.
-3. **Environment Variables**:
-   - `DATABASE_URL`: Add a PostgreSQL plugin and link it.
-   - `REDIS_URL`: Add a Redis plugin and link it.
-   - `OLLAMA_HOST`: Set to your external Ollama provider (e.g., a GPU instance).
+Since the ER Clinical Intelligence Suite relies on local AI (MedGemma via Ollama), we recommend using **Cloudflare Tunnel** to securely expose your local backend to the internet.
 
-### Render
-- Use the provided `render.yaml` to deploy with one click.
-- Ensure the `Root Directory` is set to `backend` for the web service.
+### 1. Setup Cloudflare Tunnel
+1.  **Install**: Download and install `cloudflared`.
+2.  **Auth**: Run `cloudflared tunnel login`.
+3.  **Create**: `cloudflared tunnel create er-suite`.
+4.  **Route**: `cloudflared tunnel route dns er-suite your-domain.com`.
+5.  **Run**: `cloudflared tunnel run --url http://localhost:8000 er-suite`.
+
+### 2. Update Vercel
+Set `BACKEND_URL` in Vercel to `https://your-domain.com`.
 
 ---
 
