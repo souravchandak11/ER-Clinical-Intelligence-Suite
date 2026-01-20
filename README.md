@@ -65,6 +65,20 @@ Using a fine-tuned **MedGemma** model, the suite performs high-stakes clinical t
 4.  **Access the Dashboard**
     Open `http://localhost:3000` to view the personalized clinician workspace.
 
+## 🌐 Deployment
+
+### Railway (Recommended for Backend)
+1. **Connect GitHub**: Connect your repository to Railway.
+2. **Auto-Detection**: Railway will use `railway.json` to automatically set the root directory to `/backend` and use the correct start command.
+3. **Environment Variables**:
+   - `DATABASE_URL`: Add a PostgreSQL plugin and link it.
+   - `REDIS_URL`: Add a Redis plugin and link it.
+   - `OLLAMA_HOST`: Set to your external Ollama provider (e.g., a GPU instance).
+
+### Render
+- Use the provided `render.yaml` to deploy with one click.
+- Ensure the `Root Directory` is set to `backend` for the web service.
+
 ---
 
 ## 📈 Technical Roadmap
