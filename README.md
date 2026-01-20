@@ -35,56 +35,76 @@ Using a fine-tuned **MedGemma** model, the suite performs high-stakes clinical t
 
 ---
 
-## 🚀 Quick Start
+## 🌐 Live Demo & Deployment
+
+The application is deployed as a hybrid architecture using **Vercel** for the frontend and a **Cloudflare Tunnel** to securely bridge to a local backend powered by **MedGemma** via **Ollama**.
+
+*   **Frontend (Vercel):** [https://clinical-intelligence-suite.vercel.app/](https://clinical-intelligence-suite.vercel.app/)
+*   **Backend (Local via Cloudflare):** `https://dec-plays-icons-nhs.trycloudflare.com`
+
+---
+
+## 🚀 Quick Start (Local Development)
 
 ### Prerequisites
-- Node.js 18+
-- Python 3.9+ 
-- Ollama (with MedGemma model)
+- **Node.js**: 18.x or 20.x
+- **Python**: 3.9+
+- **Docker**: For running PostgreSQL and Redis
+- **Ollama**: To serve the MedGemma model locally
 
-### Installation
-1.  **Clone the Repository**
+### 1. Installation
+```bash
+git clone https://github.com/souravchandak11/ER-Clinical-Intelligence-Suite.git
+cd ER-Clinical-Intelligence-Suite
+npm install
+```
+
+### 2. Infrastructure (Databases)
+Start the database and cache using Docker:
+```bash
+docker-compose up -d db redis
+```
+
+### 3. Backend Setup
+```bash
+cd backend
+pip install -r requirements.txt
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+```
+*Note: Ensure Ollama is running (`ollama serve`) and the MedGemma model is pulled (`ollama pull medgemma`).*
+
+### 4. Frontend Setup
+```bash
+# From the root directory
+npm run dev
+```
+Open `http://localhost:3000`.
+
+---
+
+## ☁️ Setting Up the Hybrid Cloud (Cloudflare Tunnel)
+
+To allow the Vercel-hosted frontend to communicate with your local PC's AI models:
+
+1.  **Expose the Backend:**
     ```bash
-    git clone https://github.com/souravchandak11/ER-Clinical-Intelligence-Suite.git
-    cd ER-Clinical-Intelligence-Suite
+    cloudflared tunnel --url http://localhost:8000
     ```
+    *This will generate a temporary URL like `https://xyz.trycloudflare.com`.*
 
-2.  **Setup Backend**
-    ```bash
-    cd backend
-    pip install -r requirements.txt
-    python -m uvicorn app.main:app --reload
-    ```
-
-3.  **Setup Frontend**
-    ```bash
-    npm install
-    npm run dev
-    ```
-
-4.  **Access the Dashboard**
-    Open `http://localhost:3000` to view the personalized clinician workspace.
-
-## 🌐 Deployment (Cloudflare Tunnel)
-
-Since the ER Clinical Intelligence Suite relies on local AI (MedGemma via Ollama), we recommend using **Cloudflare Tunnel** to securely expose your local backend to the internet.
-
-### 1. Setup Cloudflare Tunnel
-1.  **Install**: Download and install `cloudflared`.
-2.  **Auth**: Run `cloudflared tunnel login`.
-3.  **Create**: `cloudflared tunnel create er-suite`.
-4.  **Route**: `cloudflared tunnel route dns er-suite your-domain.com`.
-5.  **Run**: `cloudflared tunnel run --url http://localhost:8000 er-suite`.
-
-### 2. Update Vercel
-Set `BACKEND_URL` in Vercel to `https://your-domain.com`.
+2.  **Configure Vercel:**
+    - Go to your Vercel Project Settings -> Environment Variables.
+    - Set `BACKEND_URL` to your Cloudflare URL.
+    - Redeploy the application.
 
 ---
 
 ## 📈 Technical Roadmap
-- [x] Multimodal Triage Support
-- [x] SOAP Note Generation
+- [x] Multimodal Triage Support (Text, Vitals, Images)
+- [x] SOAP Note Generation with ICD-10 Coding
 - [x] Interactive 3D Anatomy Visualizer
+- [x] Secure Cloud-to-Local Bridge (Cloudflare Tunnel)
 - [ ] Real-time HL7/FHIR Integration
 - [ ] Multi-patient Monitoring Queue
 - [ ] EHR-integrated Export Plugin
+
