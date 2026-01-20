@@ -20,6 +20,8 @@ const NoteInputSchema = z.object({
     encounter_type: z.string().default("Emergency")
 });
 
+const BACKEND_URL = process.env.BACKEND_URL || "http://127.0.0.1:8000";
+
 export const aiRouter = createTRPCRouter({
     triage: publicProcedure
         .input(TriageInputSchema)
@@ -43,7 +45,7 @@ export const aiRouter = createTRPCRouter({
                     image_base64: input.image_base64
                 };
 
-                const response = await fetch("http://127.0.0.1:8000/api/triage", {
+                const response = await fetch(`${BACKEND_URL}/api/triage`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(payload),
@@ -65,7 +67,7 @@ export const aiRouter = createTRPCRouter({
         .input(NoteInputSchema)
         .mutation(async ({ input }) => {
             try {
-                const response = await fetch("http://127.0.0.1:8000/api/generate-note", {
+                const response = await fetch(`${BACKEND_URL}/api/generate-note`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(input),
